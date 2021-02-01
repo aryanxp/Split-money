@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Addgroup{% endblock title %}
+{% block style %}
+{% endblock style %}
+{% block body %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <form action='/passbook' type='get'>
+  {% csrf_token %}
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><input type="text" name='username1' placeholder="Username"></td>
+      <td><input type="text" name='amount1' placeholder="Amount"></td>
+      <td><input type="text" name='description1' placeholder="Description"></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><input type="text" name='username2' placeholder="Username"></td>
+      <td><input type="text" name='amount2' placeholder="Amount"></td>
+      <td><input type="text" name='description2' placeholder="Description"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><input type="text" name='username3' placeholder="Username"></td>
+      <td><input type="text" name='amount3' placeholder="Amount"></td>
+      <td><input type="text" name='description3' placeholder="Description"></td>
+    </tr><tr>
+      <th scope="row">4</th>
+      <td><input type="text" name='username4' placeholder="Username"></td>
+      <td><input type="text" name='amount4' placeholder="Amount"></td>
+      <td><input type="text" name='description4' placeholder="Description"></td>
+    </tr>
+  </tbody>
+
+</table>
+<center><input type='submit' class='btn btn-primary'></center>
+</form>
+{% endblock body %}

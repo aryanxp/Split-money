@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Passbook{% endblock title %}
+{% block body %}
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Description</th>
+      <th scope="col">Net-amount(to pay/recieve)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>aryan</td>
+      <td>500</td>
+      <td>food</td>
+      <td>-75</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>yuvraj</td>
+      <td>300</td>
+      <td>clothes</td>
+      <td>-275</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>aniket</td>
+      <td>700</td>
+      <td>travel</td>
+      <td>+125</td>
+    </tr><tr>
+      <th scope="row">4</th>
+      <td>rohit</td>
+      <td>800</td>
+      <td>hotel</td>
+      <td>+225</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock body %}
